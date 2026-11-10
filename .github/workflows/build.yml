@@ -24,7 +24,9 @@ jobs:
 
     - name: Install Buildozer and Cython
       run: |
-        pip3 install --user --upgrade buildozer cython virtualenv
+        pip3 install --user --upgrade buildozer virtualenv
+        # Фиксируем Cython, так как новые версии ломают сборку p4a
+        pip3 install --user Cython==0.29.33
 
     - name: Build with Buildozer
       run: |
