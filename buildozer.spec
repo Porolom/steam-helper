@@ -9,6 +9,9 @@ requirements = python3,kivy,kivymd,materialyoucolor,exceptiongroup,asyncgui,asyn
 orientation = portrait
 fullscreen = 1
 android.permissions = INTERNET
+android.accept_sdk_license = True
+android.skip_update = False
+
 
 [buildozer]
 log_level = 2
